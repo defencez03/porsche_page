@@ -1,0 +1,150 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: #fff
+}
+header{
+	/*margin-top: 50px;*/
+	border-bottom: 3px solid red;
+	background-color: #fff;
+}
+header img{
+	width: 12.5%;
+	margin: -110px 0;
+}
+.headWrapper{
+	background-color: #fff;
+	position: sticky;
+	top: 0;
+	padding-top: 1px;
+}
+nav{
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+nav ul{
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+}
+ul a{
+	text-decoration: none;
+	color: #000;
+}
+hr{
+	border: 1px solid #d1cfcf;
+	border-radius: 40px;
+	background-color: #d1cfcf;
+	animation-name: hr;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+li{
+	font-family: Raleway;
+	border: 2px solid red;
+	padding: 10px;
+	border-radius: 20px;
+	font-weight: bold;
+	transition: 0.5s;
+}
+li:hover{
+	transform: scale(1.1);
+	transition: 0.5s;
+	border: 2px solid #fa6464
+}
+.info{
+	display: flex;
+	background-color: #d1cfcf;
+}
+.info-text{
+	margin: 100px 50px 100px 50px;
+	width: 45%;
+	font-size: 1.3em;
+	border: 3px solid red;
+	border-radius: 20px;
+	padding: 15px;
+	font-family: Raleway;
+	animation-name: info-text;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	background: #fff;
+}
+.info-text p span{
+	font-weight: bolder;
+}
+.info img{
+	width: 40%;
+	margin: auto 0; 
+}
+.p911{
+	display: flex;
+	justify-content: space-around;
+	margin: 100px 0;
+	animation-name: p911;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+.p911 img{
+	width: 40%;
+	height: 100%;
+}
+.p911-text{
+	width: 40%;
+	margin: auto 0;
+	font-family: Raleway;
+	font-size: 1.3em;
+}
+.p911-text h1{
+	font-family: Righteous;
+}
+.p911-text h1 span{
+	color: red;
+	font-style: italic;
+}
+.pTaycan{
+	display: flex;
+	justify-content: space-around;
+	margin: 100px 0;
+}
+.pTaycan-text{
+	width: 40%;
+	margin: auto 0;
+	font-family: Raleway;
+	font-size: 1.3em;
+}
+.pTaycan img{
+	width: 40%;
+}
+.pTaycan-text h1{
+	font-family: Righteous;
+}
+.pTaycan-text h1 span{
+	font-family: Comfortaa;
+	color: red;
+}
+@media (max-width: 1000px){
+	.info img{
+		width: 40%;
+	}
+	.p911 img{
+		height: 20%
+	}
+	.pTaycan img{
+		height: 100%;
+		margin: auto 0;
+	}
+}
+@keyframes info-text{
+	from{margin-left: 0px}
+	to{padding-left: 5%}
+}
+@keyframes p911{
+	from{margin-right: 0px}
+	to{margin-right: 50px}
+}
+@keyframes hr{
+	from{width: 10%}
+	to{width: 100%}
+}
